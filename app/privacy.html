@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politique de Confidentialité - Nursing 509</title>
+    <title>Politique de confidentialité - Nursing 509</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -57,152 +57,37 @@
             font-style: italic;
             font-size: 0.9em;
         }
-    </style>
+    @media (max-width: 600px) { body { padding: 12px; } .container { padding: 20px; } h1 { font-size: 1.7rem; } } a { overflow-wrap: anywhere; }</style>
 </head>
-<body>
-    <div class="container">
-        <h1>Politique de Confidentialité</h1>
-        <p class="last-updated">Dernière mise à jour: 28 décembre 2025</p>
+<body><main class="container">
+<h1>Politique de confidentialité</h1>
+<p class="last-updated">Version 2026-10 — 24 octobre 2026</p>
+<p>Nursing 509 est une application de préparation aux examens infirmiers. Cette politique décrit les données du compte, de l'étude et du support.</p>
+<h2>1. Données fournies</h2>
+<ul>
+<li>La création d'un compte demande un numéro haïtien, un prénom, un nom, une école, une ville d'étude et un mot de passe. L'adresse e-mail et le sexe sont facultatifs.</li>
+<li>Ces informations servent à identifier le compte, gérer l'accès et comprendre le public étudiant auquel le service s'adresse. Le mot de passe est traité par Firebase Authentication et n'est pas conservé en clair dans le profil.</li>
+<li>Les résultats, questions enregistrées ou manquées, cartes étudiées et sessions en cours sont stockés localement, séparément pour chaque compte sur l'appareil.</li>
+<li>Un message de support peut contenir votre adresse e-mail, le texte saisi, l'identifiant du compte et des informations techniques sur le modèle et la version du système de votre appareil.</li>
+</ul>
+<h2>2. Fonctionnement et sécurité</h2>
+<p>Nous enregistrons l'identifiant du compte, les dates de connexion et de consentement, un identifiant d'installation et un jeton de session pour gérer l'accès et les connexions sur plusieurs appareils. Les services techniques peuvent traiter l'adresse IP et des journaux de fonctionnement. Firebase applique ses protections et limites aux tentatives de connexion et de récupération.</p>
+<p>Les demandes de connexion sont vérifiées directement par Firebase Authentication. Les accès aux profils et aux paiements sont limités par les règles du serveur. Aucune mesure ne permet de garantir une sécurité absolue.</p>
+<h2>3. Paiements</h2>
+<p>Sur iOS, Apple traite le paiement du téléchargement. Nous ne recevons pas votre numéro de carte bancaire. Sur Android, une demande de paiement premium peut contenir un numéro de transaction, un numéro de téléphone, le montant, la méthode et des notes. Ne communiquez jamais votre code secret de paiement.</p>
+<h2>4. Prestataires et partage</h2>
+<p>Firebase et Google Cloud hébergent l'authentification, les profils, le support et les traitements serveur. Ces prestataires peuvent traiter des données hors d'Haïti selon leur infrastructure et leurs conditions. Nous ne vendons pas vos données et n'utilisons pas ces informations pour de la publicité ciblée.</p>
+<p>Si vous choisissez un contact WhatsApp, les informations envoyées sont aussi traitées par WhatsApp/Meta. Un message e-mail passe par votre fournisseur de messagerie. Apple et les prestataires de paiement appliquent leurs propres politiques. Nous pouvons communiquer les informations nécessaires pour répondre à une obligation légale applicable.</p>
+<h2>5. Conservation et suppression</h2>
+<p>Les données du compte restent conservées pendant l'existence du compte. Dans les paramètres, « Supprimer mon compte » demande une confirmation du mot de passe puis supprime le compte Firebase, le profil, les paiements et messages associés, ainsi que les données d'étude locales de ce compte sur cet appareil. Les références du compte dans les codes utilisés sont retirées ; ces codes restent consommés. Un témoin technique, limité à un identifiant aléatoire et à la date de suppression, reste conservé pour empêcher une ancienne session de recréer les données.</p>
+<p>La suppression nécessite internet. Gardez l’application ouverte ; en cas d’interruption, reconnectez-vous pour la terminer. Une copie locale sur un autre appareil peut subsister jusqu'à son nettoyage. Les journaux et sauvegardes techniques des prestataires suivent leurs délais de conservation. Apple et les prestataires de paiement peuvent conserver les éléments nécessaires à leurs propres obligations ; supprimer le compte Nursing 509 ne supprime pas votre achat Apple.</p>
+<h2>6. Vos choix et droits</h2>
+<p>Pour demander l'accès à vos données, leur correction ou de l'aide à la suppression, écrivez à <a href="mailto:guensleyjerome@gmail.com">guensleyjerome@gmail.com</a>. Nous pouvons vérifier votre identité avant une modification. N'envoyez pas votre mot de passe. Les données d'étude sont locales : aucune restauration ou synchronisation complète entre appareils n'est garantie.</p>
+<h2>7. Mineurs et données médicales</h2>
+<p>Le service s'adresse aux étudiants et professionnels, à partir de 13 ans avec l'accord d'un parent ou tuteur avant 18 ans. Il ne demande pas de dossiers de patients ou de données de santé personnelles. N'en incluez pas dans les messages de support.</p>
+<h2>8. Modifications</h2>
+<p>Les modifications importantes sont présentées dans l'application pour un nouveau consentement. Contact : <a href="mailto:guensleyjerome@gmail.com">guensleyjerome@gmail.com</a>.</p>
+<h2>English summary</h2>
+<p>Signup requires a Haitian phone number, name, school, study town and password; email and sex are optional. We use Firebase/Google Cloud for accounts, support and server security. Study history stays locally separated by account. Apple handles iOS payments; we do not receive card details. Support messages may include device information. WhatsApp and email are optional external services. You can delete your account in Settings or contact us for access, corrections or deletion assistance. Deletion does not erase purchases or records held independently by payment providers. We do not sell personal data or use it for targeted advertising.</p>
+</main></body></html>
 
-        <div class="highlight">
-            <strong>En bref:</strong> Nous respectons votre vie privée. Nous collectons uniquement les données nécessaires pour faire fonctionner l'application, ne vendons jamais vos informations, et vous pouvez supprimer votre compte à tout moment.
-        </div>
-
-        <h2>1. Informations que nous collectons</h2>
-
-        <h3>Informations que vous nous fournissez:</h3>
-        <ul>
-            <li><strong>Numéro de téléphone</strong> (obligatoire)</li>
-            <li><strong>Prénom et nom</strong> (obligatoire)</li>
-            <li><strong>École ou institution</strong> (obligatoire)</li>
-            <li><strong>Adresse email</strong> (optionnel mais recommandé)</li>
-            <li><strong>Ville/commune, sexe, âge</strong> (optionnel)</li>
-        </ul>
-
-        <h3>Informations collectées automatiquement:</h3>
-        <ul>
-            <li><strong>Progression dans les quiz</strong> - résultats, scores, historique</li>
-            <li><strong>Informations sur l'appareil</strong> - modèle, système d'exploitation</li>
-            <li><strong>Activités d'étude</strong> - questions sauvegardées, flashcards</li>
-        </ul>
-
-        <h3>Informations de paiement:</h3>
-        <ul>
-            <li><strong>Numéro de transaction MonCash</strong></li>
-            <li><strong>Montant payé</strong> (3000 HTG)</li>
-            <li><strong>Date et statut du paiement</strong></li>
-        </ul>
-
-        <h2>2. Comment nous utilisons vos informations</h2>
-        <p>Nous utilisons vos données pour:</p>
-        <ul>
-            <li><strong>Créer et gérer votre compte</strong></li>
-            <li><strong>Suivre votre progression d'étude</strong></li>
-            <li><strong>Gérer l'accès premium</strong> - vérifier les paiements et activer les fonctionnalités</li>
-            <li><strong>Support client</strong> - répondre à vos questions via WhatsApp</li>
-        </ul>
-
-        <h2>3. Comment nous stockons vos informations</h2>
-        <p>Toutes vos données sont stockées de manière sécurisée via <strong>Google Firebase</strong>:</p>
-        <ul>
-            <li><strong>Firebase Authentication</strong> - gestion sécurisée des mots de passe (hachés, jamais en texte clair)</li>
-            <li><strong>Cloud Firestore</strong> - données de profil, progression, paiements</li>
-            <li><strong>Stockage local</strong> - progression hors ligne sur votre appareil</li>
-            <li><strong>Cryptage HTTPS</strong> - toutes les communications sont cryptées</li>
-        </ul>
-
-        <h2>4. Partage de vos informations</h2>
-        <p><strong>Nous NE vendons JAMAIS vos données personnelles.</strong></p>
-
-        <p>Vos informations sont partagées uniquement avec:</p>
-        <ul>
-            <li><strong>Firebase/Google</strong> - infrastructure cloud sécurisée</li>
-            <li><strong>MonCash/Digicel</strong> - uniquement pour les transactions de paiement</li>
-        </ul>
-
-        <p>Nous ne partageons PAS avec des annonceurs, réseaux sociaux, ou autres applications.</p>
-
-        <h2>5. Durée de conservation</h2>
-        <p>Nous conservons vos données <strong>indéfiniment</strong> pour maintenir votre compte et historique d'étude.</p>
-        <p>Vous pouvez demander la suppression à tout moment (voir section 6).</p>
-
-        <h2>6. Vos droits</h2>
-
-        <h3>Accéder à vos données</h3>
-        <p>Consultez vos informations dans les Paramètres de l'application.</p>
-
-        <h3>Supprimer votre compte</h3>
-        <p>Supprimez votre compte et toutes vos données via: Paramètres → Supprimer mon compte</p>
-        <p><em>La suppression est permanente et irréversible.</em></p>
-
-        <h3>Modifier vos informations</h3>
-        <p>Mettez à jour vos informations dans les Paramètres.</p>
-
-        <h2>7. Services tiers</h2>
-
-        <h3>Firebase (Google)</h3>
-        <p>Infrastructure cloud pour l'authentification et la base de données.</p>
-        <p>Politique de Firebase: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
-
-        <h3>MonCash (Digicel)</h3>
-        <p>Traitement des paiements premium.</p>
-        <p>Politique de Digicel: <a href="https://www.digicelgroup.com/privacy-policy" target="_blank">digicelgroup.com/privacy-policy</a></p>
-
-        <h2>8. Données des mineurs</h2>
-        <p>L'application est destinée aux étudiants en sciences infirmières (généralement 18 ans et plus).</p>
-        <p>Si vous avez moins de 18 ans, obtenez le consentement d'un parent ou tuteur.</p>
-        <p>Nous ne collectons pas sciemment de données d'enfants de moins de 13 ans.</p>
-
-        <h2>9. Sécurité</h2>
-        <ul>
-            <li>Mots de passe <strong>hachés et cryptés</strong> (jamais en texte clair)</li>
-            <li>Communications <strong>cryptées via HTTPS</strong></li>
-            <li>Données au repos <strong>cryptées</strong> par Firebase</li>
-            <li>Accès limité aux administrateurs autorisés uniquement</li>
-        </ul>
-
-        <h2>10. Spécificités pour Haïti</h2>
-        <p>Application conçue pour les étudiants haïtiens avec accès internet limité:</p>
-        <ul>
-            <li><strong>Mode hors ligne</strong> - données stockées localement et synchronisées</li>
-            <li><strong>Paiement local</strong> - MonCash et courtiers agréés</li>
-        </ul>
-
-        <h2>11. Modifications</h2>
-        <p>Nous pouvons mettre à jour cette politique. Les changements importants vous seront notifiés via l'application.</p>
-
-        <div class="contact">
-            <h2 style="color: white; margin-top: 0;">12. Contact</h2>
-            <p>Pour toute question sur cette politique ou vos données:</p>
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/50944592929">+509 44 59 2929</a></p>
-            <p><strong>Email:</strong> guensleyjerome@gmail.com</p>
-        </div>
-
-        <hr style="margin: 40px 0;">
-
-        <h2>Privacy Policy (English Summary)</h2>
-
-        <h3>What We Collect</h3>
-        <p>Phone number, email (optional), name, school, quiz scores, payment information.</p>
-
-        <h3>How We Use It</h3>
-        <p>Account creation, track study progress, manage premium access, customer support.</p>
-
-        <h3>How We Store It</h3>
-        <p>Securely via Firebase (Google Cloud). Encrypted in transit and at rest. Passwords are hashed.</p>
-
-        <h3>Data Sharing</h3>
-        <p>We NEVER sell your data. Shared only with Firebase/Google (infrastructure) and MonCash (payments).</p>
-
-        <h3>Your Rights</h3>
-        <p>Access, modify, or delete your data anytime. Contact us via WhatsApp: +509 44 59 2929</p>
-
-        <h3>Retention</h3>
-        <p>Data kept indefinitely unless you request deletion.</p>
-
-        <p style="margin-top: 40px; text-align: center; color: #6B7280; font-size: 0.9em;">
-            © 2025 Nursing 509. Tous droits réservés.
-        </p>
-    </div>
-</body>
-</html>
