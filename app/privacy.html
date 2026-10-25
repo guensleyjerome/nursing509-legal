@@ -61,7 +61,7 @@
 </head>
 <body><main class="container">
 <h1>Politique de confidentialité</h1>
-<p class="last-updated">Version 2026-10 — 24 octobre 2026</p>
+<p class="last-updated">Version 2026-10 — 25 octobre 2026</p>
 <p>Nursing 509 est une application de préparation aux examens infirmiers. Cette politique décrit les données du compte, de l'étude et du support.</p>
 <h2>1. Données fournies</h2>
 <ul>
@@ -72,11 +72,11 @@
 </ul>
 <h2>2. Fonctionnement et sécurité</h2>
 <p>Nous enregistrons l'identifiant du compte, les dates de connexion et de consentement, un identifiant d'installation et un jeton de session pour gérer l'accès et les connexions sur plusieurs appareils. Les services techniques peuvent traiter l'adresse IP et des journaux de fonctionnement. Firebase applique ses protections et limites aux tentatives de connexion et de récupération.</p>
-<p>Les demandes de connexion sont vérifiées directement par Firebase Authentication. Les accès aux profils et aux paiements sont limités par les règles du serveur. Aucune mesure ne permet de garantir une sécurité absolue.</p>
+<p>La connexion conserve votre numéro ou nom d'utilisateur et votre mot de passe habituels. Pour retrouver de manière privée l'identifiant Firebase associé, une passerelle sur notre hébergement Sites existant (OpenAI et Cloudflare) reçoit ces informations par HTTPS et demande à Firebase Authentication de vérifier le mot de passe. La passerelle n'enregistre ni mot de passe, ni jeton utilisateur, ni copie des profils. Seuls des compteurs temporaires utilisant des empreintes non réversibles sont conservés pour limiter les tentatives ; leurs autorisations expirent au plus tard après 30 minutes et ils sont nettoyés lors des demandes suivantes. Les accès aux profils et aux paiements sont limités par les règles du serveur. Aucune mesure ne permet de garantir une sécurité absolue.</p>
 <h2>3. Paiements</h2>
 <p>Sur iOS, Apple traite le paiement du téléchargement. Nous ne recevons pas votre numéro de carte bancaire. Sur Android, une demande de paiement premium peut contenir un numéro de transaction, un numéro de téléphone, le montant, la méthode et des notes. Ne communiquez jamais votre code secret de paiement.</p>
 <h2>4. Prestataires et partage</h2>
-<p>Firebase et Google Cloud hébergent l'authentification, les profils, le support et les traitements serveur. Ces prestataires peuvent traiter des données hors d'Haïti selon leur infrastructure et leurs conditions. Nous ne vendons pas vos données et n'utilisons pas ces informations pour de la publicité ciblée.</p>
+<p>OpenAI Sites et Cloudflare assurent le transit sécurisé de la connexion et la limitation des tentatives décrits ci-dessus. Firebase et Google Cloud hébergent l'authentification, les profils, le support et les traitements serveur. Ces prestataires peuvent traiter des données hors d'Haïti selon leur infrastructure et leurs conditions. Nous ne vendons pas vos données et n'utilisons pas ces informations pour de la publicité ciblée.</p>
 <p>Si vous choisissez un contact WhatsApp, les informations envoyées sont aussi traitées par WhatsApp/Meta. Un message e-mail passe par votre fournisseur de messagerie. Apple et les prestataires de paiement appliquent leurs propres politiques. Nous pouvons communiquer les informations nécessaires pour répondre à une obligation légale applicable.</p>
 <h2>5. Conservation et suppression</h2>
 <p>Les données du compte restent conservées pendant l'existence du compte. Dans les paramètres, « Supprimer mon compte » demande une confirmation du mot de passe puis supprime le compte Firebase, le profil, les paiements et messages associés, ainsi que les données d'étude locales de ce compte sur cet appareil. Les références du compte dans les codes utilisés sont retirées ; ces codes restent consommés. Un témoin technique, limité à un identifiant aléatoire et à la date de suppression, reste conservé pour empêcher une ancienne session de recréer les données.</p>
@@ -88,6 +88,6 @@
 <h2>8. Modifications</h2>
 <p>Les modifications importantes sont présentées dans l'application pour un nouveau consentement. Contact : <a href="mailto:guensleyjerome@gmail.com">guensleyjerome@gmail.com</a>.</p>
 <h2>English summary</h2>
-<p>Signup requires a Haitian phone number, name, school, study town and password; email and sex are optional. We use Firebase/Google Cloud for accounts, support and server security. Study history stays locally separated by account. Apple handles iOS payments; we do not receive card details. Support messages may include device information. WhatsApp and email are optional external services. You can delete your account in Settings or contact us for access, corrections or deletion assistance. Deletion does not erase purchases or records held independently by payment providers. We do not sell personal data or use it for targeted advertising.</p>
+<p>Signup requires a Haitian phone number, name, school, study town and password; email and sex are optional. We use Firebase/Google Cloud for accounts, support and server security. Phone/password sign-in passes through our existing OpenAI Sites/Cloudflare host for private account resolution and Firebase password verification; this gateway does not store passwords or user tokens. Temporary abuse counters use keyed hashes rather than raw phone numbers or IP addresses. Study history stays locally separated by account. Apple handles iOS payments; we do not receive card details. Support messages may include device information. WhatsApp and email are optional external services. You can delete your account in Settings or contact us for access, corrections or deletion assistance. Deletion does not erase purchases or records held independently by payment providers. We do not sell personal data or use it for targeted advertising.</p>
 </main></body></html>
 
